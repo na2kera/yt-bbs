@@ -7,4 +7,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  # localhost:3000/posts
+  # indexコントローラー
+  resources :posts, only: [:index, :new, :create]
+  # localhost:3000/posts/new
+  # localhost:3000/posts/create
 end
